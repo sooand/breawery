@@ -21,4 +21,6 @@ class Recipe extends Model
         ];
     }
 
+    
+
 }
