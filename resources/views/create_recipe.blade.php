@@ -27,6 +27,9 @@
                 <x-dynamic-input>Secondary</x-dynamic-input>
                 <x-dynamic-input>Yeast</x-dynamic-input>
             </div>
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold text-gray-700 dark:text-gray-200 mt-7 mb-5">Instructions</h3>
+            </div>
             <div class="flex justify-end">
                 <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Create Recipe</button>
             </div>

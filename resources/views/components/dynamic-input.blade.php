@@ -6,11 +6,11 @@
                 <div class="flex w-full">
                     <input type="text" x-model="inputs[index]" name="ingredients[]" class="w-full grow mt-4 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                     <template x-if="inputs.length > 1">
-                        <button @click.prevent="inputs.splice(index, 1)" class="text-blue-500 flex-none mx-3">-</button>
+                        <button @click.prevent="inputs.splice(index, 1)" class="text-blue-500 flex-none mx-3 text-2xl">-</button>
                     </template>
                 </div>
             </template>
         </div>
     </div>
-    <button @click.prevent="inputs.push('')" class="text-blue-500">+</button>
+    <button @click.prevent="inputs.push('')" class="text-blue-500 text-2xl">+</button>
 </div>
