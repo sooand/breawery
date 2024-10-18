@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Models\Recipe;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RecipeController;
+use App\Http\Controllers\IngredientController;
 
 
 Route::get('/dashboard', function () {
@@ -24,6 +25,11 @@ Route::middleware('auth')->group(function () {
         return view('create_recipe');
     });
     Route::post('create_recipe', [RecipeController::class, 'store'])->name('create_recipe.store');
+
+    Route::get('insert_ingredient', function() {
+        return view('insert_ingredient');
+    });
+    Route::post('insert_ingredient', [IngredientController::class, 'store'])->name('insert_ingredient.store');
 });
 
 require __DIR__.'/auth.php';
