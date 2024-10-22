@@ -26,6 +26,12 @@
             <div x-show="selected === 'fermentables'">
                 <x-add-fermentable></x-add-fermentable>
             </div>
+            <div x-show="selected === 'secondary'">
+                <x-add-secondary></x-add-secondary>
+            </div>
+            <div x-show="selected === 'yeast'">
+                <x-add-yeast></x-add-yeast>
+            </div>
             <div class="flex justify-end">
                 <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Insert Ingredient</button>
             </div>
